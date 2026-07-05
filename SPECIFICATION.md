@@ -51,7 +51,7 @@ The file header consists of 16 bytes: 8 bytes for the magic number and 8 bytes f
 
 The body is a stream of heart rate values in the `[Δt], value` order
 
-**Δt** is the number of milliseconds between the previous measurement and the current measurement integer-divided by 10 and clamped between `0x00` and `0xff`. Since Δt is an interval, the first heartbeat value in the body does _not_ have a Δt value before it and should be written at the same time as the header's timestamp
+**Δt** is the number of milliseconds between the previous measurement and the current measurement bit-shifted to the right by 3 and clamped between `0x00` and `0xff`. Since Δt is an interval, the first heartbeat value in the body does _not_ have a Δt value before it and should be written at the same time as the header's timestamp
 
 The heartbeat **value** depends on the value to write. If the heartbeat value is less than 255, the value written is a single byte as is. If it is 255 and higher the byte `0xff` is written, right after which a 2 byte value is written in _little endian_. This means 255 will be written as (in hex) `ff ff 00` and the largest value supported by the format (and by the heartrate GATT characteristic) is 65535 (`ff ff ff`; 2^16 - 1)
 
@@ -65,9 +65,9 @@ If the last `Δt, value` pair in the body isn't fully written (only Δt is provi
 
 
 ## Size Estimations
-<sub>With average for human HRMs values: broadcast frequency of ~1 Hz and an 8 bit value range</sub>
+<sub>With average for human BLE HRMs values: broadcast frequency of ~1 Hz and an 8 bit value range</sub>
 
-16 B (header) + 1 B + ~3600 * 2 B (body) ≈ 7217 B ≈ **7.048** KiB (per hour of recording)
+16 B (header) + 1 B + ~3600 * 2 B (body) ≈ 7217 B ≈ **7.048** KiB (per one hour of recording)
 
 
 ## Standard Directory
