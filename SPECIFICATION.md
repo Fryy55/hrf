@@ -10,6 +10,7 @@
 - [General Details](#general-details)
   - [Magic Number](#magic-number)
   - [File Extensions](#file-extensions)
+  - [Version Support](#version-support)
 - [Version 1](#version-1)
   - [Header](#header)
   - [Body](#body)
@@ -30,6 +31,12 @@ The first 8 bytes of the file contain the magic number. Byte 0 specifies the ver
 | Version | Primary extension(s) |
 | :-----: | -------------------- |
 |    1    | `.hrf`               |
+
+
+## Version Support
+| Version | Status |
+| :-----: | -------------------- |
+|    1    | :pencil: Draft |
 
 
 
