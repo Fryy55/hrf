@@ -36,7 +36,7 @@ The first 8 bytes of the file contain the magic number. Byte 0 specifies the ver
 ## Version Support
 | Version | Status         |
 | :-----: | -------------- |
-|    1    | :pencil: Draft |
+|    1    | :white_check_mark: Finalized |
 
 
 
