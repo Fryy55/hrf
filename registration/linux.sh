@@ -15,7 +15,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>
     </magic>
   </mime-type>
 </mime-info>' > $HOME/.local/share/mime/packages/x.heart-rate-format.xml
-update-mime-database $HOME/.local/share/mime;
+update-mime-database $HOME/.local/share/mime
 
 echo 'XDG MIME info set up'
 
