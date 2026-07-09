@@ -8,7 +8,8 @@
 <!-- omit from toc -->
 ## Table of Contents
 - [General Details](#general-details)
-  - [Magic Number](#magic-number)
+  - [Magic Numbers](#magic-numbers)
+  - [MIME Types](#mime-types)
   - [File Extensions](#file-extensions)
   - [Version Support](#version-support)
 - [Version 1](#version-1)
@@ -21,10 +22,16 @@
 
 
 # General Details
-## Magic Number
+## Magic Numbers
 The first 8 bytes of the file contain the magic number. Byte 0 specifies the version of the format, while bytes 1-7 are constant through all versions of the format (`48 52 46 06 07 54 52` hex, `H R F . . T R` ASCII with unprintable characters as `.`). Currently all possible magic numbers are (in hex):
 
 - `01 48 52 46 06 07 54 52` - version 1
+
+
+## MIME Types
+| Version | MIME type                           |
+| :-----: | ----------------------------------- |
+|    1    | `application/x.heart-rate-format-1` |
 
 
 ## File Extensions
