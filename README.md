@@ -1,5 +1,5 @@
 # Heart Rate Format
-Specification + visualizer for the Heart Rate Format
+Specification + visualizer for the Heart Rate Format - a format for storing data recorded during heartrate measuring sessions
 
 Notable projects that use HRF (feel free to reach out to get your project added):
 - [HRM Widget](https://github.com/Fryy55/hrm-widget)
