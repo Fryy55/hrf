@@ -5,5 +5,9 @@ Windows Registry Editor Version 5.00
 @="Fryy55.HeartRateFormat.1"
 "Content Type"="application/x.heart-rate-format-1"
 
+
 [HKEY_CURRENT_USER\Software\Classes\Fryy55.HeartRateFormat.1]
 @="Heart Rate Format (HRF) v1 File"
+
+[HKEY_CURRENT_USER\Software\Classes\Fryy55.HeartRateFormat.1\DefaultIcon]
+@="C:\\Windows\\System32\\shell32.dll,258"
