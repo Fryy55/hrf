@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_CURRENT_USER\Software\Classes\.hrf]
+@="Fryy55.HeartRateFormat.1"
+"Content Type"="application/x.heart-rate-format-1"
+
+[HKEY_CURRENT_USER\Software\Classes\Fryy55.HeartRateFormat.1]
+@="Heart Rate Format (HRF) v1 File"

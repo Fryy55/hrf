@@ -7,6 +7,9 @@ Notable projects that use HRF (feel free to reach out to get your project added)
 ## Format Registration
 Follow these instructions to register the Heart Rate Format on your system
 
+### Windows
+<a href=https://raw.githubusercontent.com/Fryy55/hrf/refs/heads/main/registration/windows.reg download>Click here</a> to download a `windows.reg` file. Double click it and accept changes to register the HRF
+
 ### Linux
 Run the following command:
 ```bash
