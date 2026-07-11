@@ -27,7 +27,7 @@ if grep -q 'Heart Rate Format (HRF) v1 File' /etc/magic; then
 else
 	echo 'Registering magic number...'
 
-	printf '\n0\tstring\t\\x01HRF\\x06\\x07TR\tHeart Rate Format (HRF) v1 File\n' | sudo tee -a /etc/magic > /dev/null
+	printf '\n0\tstring\t\\x01HRF\\x06\\x07TR\tHeart Rate Format (HRF) v1 File\n!:mime\tapplication/x.heart-rate-format-1\n' | sudo tee -a /etc/magic > /dev/null
 
 	echo 'Magic number registered'
 fi
