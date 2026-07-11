@@ -24,6 +24,9 @@ curl -fsSL https://raw.githubusercontent.com/Fryy55/hrf/refs/heads/main/registra
 ```
 
 
+## macOS
+Format integration is bundled with the visualizer app on macOS. You can download the latest version from [releases](https://github.com/Fryy55/hrf/releases)
+
 
 # Specification
 See [SPECIFICATION.md](./SPECIFICATION.md) for a full specification document
