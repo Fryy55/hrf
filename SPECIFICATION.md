@@ -1,5 +1,5 @@
 ##### © 2026 Fryy_55. This specification is licensed under the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**.
-###### Revision from 2026-07-06
+###### Revision from 2026-07-11
 
 <!-- omit from toc -->
 # Heart Rate Format Specification
@@ -9,7 +9,7 @@
 ## Table of Contents
 - [General Details](#general-details)
   - [Magic Numbers](#magic-numbers)
-  - [MIME Types](#mime-types)
+  - [Format Identifiers](#format-identifiers)
   - [File Extensions](#file-extensions)
   - [Version Support](#version-support)
 - [Version 1](#version-1)
@@ -28,10 +28,10 @@ The first 8 bytes of the file contain the magic number. Byte 0 specifies the ver
 - `01 48 52 46 06 07 54 52` - version 1
 
 
-## MIME Types
-| Version | MIME type                           |
-| :-----: | ----------------------------------- |
-|    1    | `application/x.heart-rate-format-1` |
+## Format Identifiers
+| Version | MIME type                           | ProgID                     | UTI                            |
+| :-----: | ----------------------------------- | -------------------------- | ------------------------------ |
+|    1    | `application/x.heart-rate-format-1` | `Fryy55.HeartRateFormat.1` | `com.Fryy55.HeartRateFormat.1` |
 
 
 ## File Extensions
